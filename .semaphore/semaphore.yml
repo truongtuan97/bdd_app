@@ -15,7 +15,7 @@ blocks:
       jobs:
         - name: bundle
           commands:
-            - gem install bundler -v 1.16.1
+            - gem install bundler
             - bundle install --deployment -j 4 --path vendor/bundle
   - name: Code scanning
     task:
