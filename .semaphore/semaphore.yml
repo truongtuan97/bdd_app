@@ -14,6 +14,7 @@ blocks:
             - sem-service start postgres 11
             - sem-version ruby 2.6.0
             - gem update --system
+            - bundle update --bundler
             - bundle install --deployment --path vendor/bundle
             - cache store
             - 'bundle exec rake db:setup'
